@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+/* ── Design 3 tokens ── */
+:root {
+    --bg: #f5f2eb;
+    --bg2: #efebe2;
+    --paper: #faf8f3;
+    --card: #ffffff;
+    --ink: #1a1814;
+    --ink2: #6b6760;
+    --ink3: #b0ada6;
+    --rule: #d4d0c8;
+    --rule2: #e8e4da;
+    --stamp-r: #c0392b;
+    --stamp-g: #1a5c3a;
+    --stamp-b: #1a3a6b;
+    --stamp-y: #8a6000;
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-body: 'IBM Plex Sans', sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+}
+
+.dark {
+    --bg: #111108;
+    --bg2: #18170e;
+    --paper: #1e1c12;
+    --card: #242218;
+    --ink: #f0ede4;
+    --ink2: #9a9688;
+    --ink3: #5a5750;
+    --rule: #2e2c22;
+    --rule2: #252318;
+    --stamp-r: #e05040;
+    --stamp-g: #3a8c5a;
+    --stamp-b: #3a6aab;
+    --stamp-y: #c09020;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 14px;
+    line-height: 1.6;
+    transition: background 0.2s, color 0.2s;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--rule);
+    border-radius: 3px;
+}
+
+/* Prose overrides for markdown */
+.d3-prose {
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+.d3-prose p {
+    margin-bottom: 10px;
+}
+
+.d3-prose p:last-child {
+    margin-bottom: 0;
+}
+
+.d3-prose strong {
+    color: var(--ink);
+    font-weight: 600;
+}
+
+.d3-prose em {
+    font-style: italic;
+}
+
+.d3-prose h1,
+.d3-prose h2,
+.d3-prose h3 {
+    font-family: var(--font-display);
+    letter-spacing: 0.5px;
+    margin: 16px 0 8px;
+    color: var(--ink);
+}
+
+.d3-prose ul,
+.d3-prose ol {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.d3-prose li {
+    margin-bottom: 4px;
+}
+
+.d3-prose code {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    background: var(--bg2);
+    color: var(--ink);
+    padding: 1px 5px;
+    border: 1px solid var(--rule);
+}
+
+.d3-prose pre {
+    margin: 10px 0;
+    border: 1px solid var(--rule);
+}
+
+.d3-prose blockquote {
+    border-left: 3px solid var(--ink3);
+    padding-left: 12px;
+    color: var(--ink2);
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.d3-prose a {
+    color: var(--stamp-b);
+    text-decoration: underline;
+}
