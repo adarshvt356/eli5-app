@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eli5-app-one.vercel.app/sitemap.xml
