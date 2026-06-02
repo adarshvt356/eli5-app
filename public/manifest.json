@@ -1,0 +1,9 @@
+{
+    "name": "ELI5 AI — Explain Anything",
+    "short_name": "ELI5 AI",
+    "description": "AI-powered explanations for code, errors, and concepts",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#f5f2eb",
+    "theme_color": "#1a1814"
+}
