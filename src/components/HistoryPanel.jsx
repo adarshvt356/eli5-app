@@ -36,7 +36,7 @@ function HistoryPanel({ history, onSelect, onDelete }) {
                     marginTop: 0
                 }}
             >
-                Session Log
+                Explanation History
                 <span
                     style={{
                         fontFamily: 'var(--font-mono)',
