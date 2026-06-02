@@ -178,15 +178,15 @@ function App() {
             Vol. I &nbsp;·&nbsp; Issue No. 001 &nbsp;·&nbsp; AI Explanation Engine
           </div>
 
-          <div className="d3-headline">
+          <h1 className="d3-headline">
             EXPLAIN
             <br />
             <span style={{ WebkitTextStroke: '1.5px var(--ink)', color: 'transparent' }}>
               ANYTHING
             </span>
-          </div>
+          </h1>
 
-          <div
+          <p
             style={{
               fontSize: '13px',
               color: 'var(--ink2)',
@@ -197,9 +197,10 @@ function App() {
               paddingLeft: '10px',
             }}
           >
-            Paste code, errors, articles or concepts. Get a clear explanation
-            in any mode — from five-year-old simple to full technical depth.
-          </div>
+            Paste any code snippet, error message, article or programming concept.
+            Get an instant AI-powered explanation in four styles — ELI5, Beginner,
+            Technical, or Analogy.
+          </p>
         </div>
 
         {/* Main content */}

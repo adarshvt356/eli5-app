@@ -21,7 +21,7 @@ function HistoryPanel({ history, onSelect, onDelete }) {
     return (
         <div style={{ marginTop: '8px' }}>
             {/* Section header */}
-            <div
+            <h2
                 style={{
                     fontFamily: 'var(--font-display)',
                     fontSize: '22px',
@@ -33,6 +33,7 @@ function HistoryPanel({ history, onSelect, onDelete }) {
                     display: 'flex',
                     alignItems: 'baseline',
                     justifyContent: 'space-between',
+                    marginTop: 0
                 }}
             >
                 Session Log
@@ -47,7 +48,7 @@ function HistoryPanel({ history, onSelect, onDelete }) {
                 >
                     Last {history.length} entries
                 </span>
-            </div>
+            </h2>
 
             {/* History list */}
             <div style={{ border: '1.5px solid var(--ink)', background: 'var(--paper)' }}>

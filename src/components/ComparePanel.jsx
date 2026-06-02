@@ -73,7 +73,7 @@ function ComparePanel({ results, loading, darkMode }) {
       `}</style>
 
             {/* Section header */}
-            <div
+            <h2
                 style={{
                     fontFamily: 'var(--font-display)',
                     fontSize: 'clamp(16px, 3vw, 22px)',
@@ -87,6 +87,7 @@ function ComparePanel({ results, loading, darkMode }) {
                     justifyContent: 'space-between',
                     flexWrap: 'wrap',
                     gap: '4px',
+                    marginTop: 0
                 }}
             >
                 All Modes Compared
@@ -101,7 +102,7 @@ function ComparePanel({ results, loading, darkMode }) {
                 >
                     Same input · 4 perspectives
                 </span>
-            </div>
+            </h2>
 
             <div className="d3-compare-grid">
                 {MODES.map((m) => (
