@@ -32,6 +32,7 @@ function InputPanel({ onSubmit, onCompare, loading }) {
                 <textarea
                     value={question}
                     onChange={handleChange}
+                    aria-label="Paste your code, error message, or concept here"
                     placeholder="Type or paste anything here…"
                     style={{
                         width: '100%',
@@ -74,6 +75,7 @@ function InputPanel({ onSubmit, onCompare, loading }) {
                         <button
                             onClick={() => onCompare(question)}
                             disabled={isDisabled}
+                            aria-label="Compare all four explanation modes side by side"
                             style={{
                                 fontFamily: 'var(--font-mono)',
                                 fontSize: '10px',
@@ -103,6 +105,7 @@ function InputPanel({ onSubmit, onCompare, loading }) {
                         <button
                             onClick={() => onSubmit(question)}
                             disabled={isDisabled}
+                            aria-label="Explain using selected mode"
                             style={{
                                 fontFamily: 'var(--font-display)',
                                 fontSize: '15px',
